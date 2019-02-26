@@ -1,3 +1,10 @@
+//      Authors: Pazuzu Jindrich,
+//              Francois Mukaba
+//              Ariel Mukadi
+//
+//      Date: 2/25/2018
+
+
 //LED variables
 int yellow = 3;
 int green = 4;
@@ -73,6 +80,7 @@ void turnOffLEDs(){
   digitalWrite(yellow, LOW);
 }
 /*********************************************************************************************************************************************/
+//play registerd inputs
 void playBack(){
   for(int i = 0; i<index; i++)
   {
@@ -157,6 +165,8 @@ void loop() {
     playBack();
   }
   lastButton = currentButton;
+ 
+  //"reset" registered inputs
   if(reset_State == HIGH)
   {
     index = 0;
