@@ -4,7 +4,6 @@
 //
 //      Date: 2/25/2018
 
-
 //LED variables
 int yellow = 3;
 int green = 4;
